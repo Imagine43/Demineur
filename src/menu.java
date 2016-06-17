@@ -5,6 +5,8 @@ public class menu {
 		// TODO Stub de la méthode généré automatiquement
 		//Groupe: Yann KOMBILA, Louis VILLENAVE, Thomas MIGEREL, Gauthier TUFFOU
 		//
+		
+		System.out.println("loulou");
 	}
 
 }
