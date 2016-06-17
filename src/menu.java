@@ -1,10 +1,34 @@
+import java.util.Scanner;
 
-public class menu {
+public class menu
+{	
 
-	public static void main(String[] args) {
-		// TODO Stub de la méthode généré automatiquement
-		//Groupe: Yann KOMBILA, Louis VILLENAVE, Thomas MIGEREL, Gauthier TUFFOU
-		//
+	public menu()
+	{
+	Scanner screp = new Scanner(System.in);
+	
+	
+	System.out.println("\n");
+	System.out.println("Veuillez choisir la difficulté de votre jeu");
+	System.out.println("1 - Facile");
+	System.out.println("2 - Normal");
+	System.out.println("3 - Difficile");
+	int rep = screp.nextInt();
+	switch (rep)
+	{
+	case 1 :
+			System.out.println("Facile");
+			break;
+	case 2 :
+			System.out.println("Normal");
+			break;
+	case 3 :
+			System.out.println("Difficile");
+			break;
+	default:
+			System.out.println("Aucun choix sélectionné, sortie...");
+			break;
 	}
-
+	}
 }
+
