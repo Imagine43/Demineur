@@ -26,7 +26,7 @@ public class menu
 			System.out.println("Difficile");
 			break;
 	default:
-			System.out.println("Aucun choix sélectionné, sortie...");
+			menu monmenu = new menu();
 			break;
 	}
 	}
