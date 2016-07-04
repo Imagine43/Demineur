@@ -10,15 +10,17 @@ public class menu
 	System.out.println("Veuillez choisir la difficulté de votre jeu");
 	System.out.println("1 - Facile"); // Le mode facile contiendra 25 cases 
 	System.out.println("2 - Normal"); // Le mode normal contiendra 50 cases
-	// System.out.println("3 - Difficile"); // Le mode difficile contiendra hypothétiquement 75 cases, si nous poussons le jeu jusque là.
+	// System.out.println("3 - Difficile"); // Le mode difficile contiendra hypothétiquement 75 cases, si nous poussons le jeu jusque-là.
 	int v_rep = screp.nextInt(); //On initialise notre variable de réponse qui s'appelle v_rep
 	switch (v_rep)
 	{
 	case 1 :
-			tab montab = new tab(); // On appelle notre objet tableau pour afficher la surface de jeu.
+			tab demineur = new tab(); // On appelle notre objet tableau pour afficher la surface de jeu.
+			demineur.facile();
 			break;
 	case 2 :
-			System.out.println("Normal");
+			tab demineurN = new tab();
+			demineurN.normal();
 			break;
 	/*case 3 :
 			System.out.println("Difficile");
