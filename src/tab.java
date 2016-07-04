@@ -10,8 +10,22 @@ import javax.swing.JPanel;
 public class tab extends JFrame {
 
 	public void facile(){
-
-	    this.setTitle("Demineur");
+		
+		int  h=10, w=20;
+		JFrame frame = new JFrame();
+		frame.setSize(1000, 800);
+		frame.setLayout(new GridLayout(h, w));
+		
+		JButton[][] bouton = new JButton[h][w];
+		
+		for (int i = 0; i < h; i++)
+		for (int j = 0; j < w; j++) 
+		{	
+			frame.add(bouton[i][j] = new JButton());
+		}
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    /*this.setTitle("Demineur");
 
 	    this.setSize(500, 500);
 
@@ -87,14 +101,28 @@ public class tab extends JFrame {
 		this.getContentPane().add(b25);
 		
 		
-		this.setVisible(true);
+		this.setVisible(true);*/
 	}
 	
 	public void normal(){
 
-	    this.setTitle("Demineur");
+		int  h=20, w=20;
+		JFrame frame = new JFrame();
+		frame.setSize(1000, 800);
+		frame.setLayout(new GridLayout(h, w));
+		
+		JButton[][] bouton = new JButton[h][w];
+		
+		for (int i = 0; i < h; i++)
+		for (int j = 0; j < w; j++) 
+		{	
+			frame.add(bouton[i][j] = new JButton());
+		}
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    /*this.setTitle("Demineur");
 
-	    this.setSize(500, 500);
+	    this.setSize(700, 700);
 
 	    this.setLocationRelativeTo(null);
 
@@ -218,8 +246,26 @@ public class tab extends JFrame {
 		this.getContentPane().add(b50);
 		
 		
-		this.setVisible(true);
+		this.setVisible(true); */
 	  }
+	
+	public void difficile()
+	{
+		int  h=30, w=20;
+		JFrame frame = new JFrame();
+		frame.setSize(1000, 800);
+		frame.setLayout(new GridLayout(h, w));
+		
+		JButton[][] bouton = new JButton[h][w];
+		
+		for (int i = 0; i < h; i++)
+		for (int j = 0; j < w; j++) 
+		{	
+			frame.add(bouton[i][j] = new JButton());
+		}
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
 
 }
 
