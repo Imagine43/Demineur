@@ -9,23 +9,28 @@ import javax.swing.JPanel;
 
 public class tab extends JFrame {
 
+	// Ici, nous aurons la classe permettant de générer la grille selon le niveau de difficulté choisi par l'utilisateur.
+	// Pour des raisons de programmation Objet, nous avon choisi de créer une méthode par difficulté à l'intérieur de notre fonction grille.
 	public void facile(){
 		
-		int  h=10, w=20;
-		JFrame frame = new JFrame();
-		frame.setSize(1000, 800);
-		frame.setLayout(new GridLayout(h, w));
+		int  h=10, w=20; // Nous choisissons ici la le nombre de case sur la hauteur (h) et sur la largeur (w)
+		JFrame frame = new JFrame(); // on initialise une nouvelle instance de l'objet JFrame afind e pouvoir l'utiliser par la suite pour créer notre grille.
+		frame.setSize(1000, 800); // On choisit la dimension de la fenêtre.
+		frame.setLayout(new GridLayout(h, w)); // Nous initialisons la grille.
 		
-		JButton[][] bouton = new JButton[h][w];
+		JButton[][] bouton = new JButton[h][w]; // On initialise la classe JButton.
 		
 		for (int i = 0; i < h; i++)
 		for (int j = 0; j < w; j++) 
 		{	
-			frame.add(bouton[i][j] = new JButton());
+			frame.add(bouton[i][j] = new JButton()); // ... et on génére le nombre de case voulu avec la nomenclature qui va bien. Ici nous avons décider de laisser les cases vides !
 		}
-		frame.setVisible(true);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	    /*this.setTitle("Demineur");
+		frame.setVisible(true); // On rend visible la grille.
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Et on finit par déterminer les conditions de fermeture du Jframe.
+	    
+		// Nous aurons la même structure par la suite, nous permettant de créer nos différents niveaux de jeu. Nous ne commenterons donc pas le code suivant.
+		
+		/*this.setTitle("Demineur");
 
 	    this.setSize(500, 500);
 
